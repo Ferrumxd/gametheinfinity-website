@@ -14,14 +14,13 @@ export const Router = () => {
         <BrowserRouter>
             <Switch>
                 <Route exact path="/">
+                    <Login />
+                </Route>
+                <Route exact path="/test">
                     <NavBar />
                     <br/>
                     <ServerContent />
                 </Route>
-                <Route exact path="/test">
-                    <Login />
-                </Route>
-                
             </Switch>
         </BrowserRouter>
     )
